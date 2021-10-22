@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import data from "./data";
 
 function App() {
+  const [pessoa, setPessoa] = useState(data)
+  console.log(pessoa)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <main>
+      <div className='container'>
+      <section className="section">
+        {data.map((element) => (
+          <h3>{element.name}</h3>
+        ))}
+      </section>
+      
+      <button className='button'>Clear all</button>
+      </div>
+      </main>
+    </>
   );
 }
 
