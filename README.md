@@ -5,7 +5,7 @@
 
 ## Simple birthday reminder feature
 
-O presente projeto foi feito visando pôr em prática conceitos básicos do ReactJS, onde foi abordado apenas o conceito useState.
+O presente projeto foi feito visando por em prática conceitos básicos do ReactJS, onde foi abordado apenas o conceito useState.
 
 Link público: https://massari-birthday-reminder.netlify.app/
 
