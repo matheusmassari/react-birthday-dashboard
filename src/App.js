@@ -1,22 +1,30 @@
-import { useState } from 'react'
+import { useState } from "react";
+import List from "./List";
 import data from "./data";
 
 function App() {
-  const [pessoa, setPessoa] = useState(data)
-  console.log(pessoa)
+  const [pessoa, setPessoa] = useState(data);
+
+  const personInfo = {
+    info1: pessoa,
+    info2: setPessoa
+  }
+
+  function toggleOnOff() {
+    pessoa.length > 0 ?
+    setPessoa([])
+    : setPessoa(data)
+  }
+  
 
   return (
     <>
       <main>
-      <div className='container'>
-      <section className="section">
-        {data.map((element) => (
-          <h3>{element.name}</h3>
-        ))}
-      </section>
-      
-      <button className='button'>Clear all</button>
-      </div>
+        <section className="container">
+          <h3>{pessoa.length} Aniversários hoje</h3>
+          <List pessoa = {pessoa} setPessoa={setPessoa}/>
+          <button className='btn' onClick={() => toggleOnOff()}>{pessoa.length > 0 ? 'limpar todos' : 'mostrar aniversários'}</button>
+        </section>
       </main>
     </>
   );

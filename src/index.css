@@ -155,6 +155,19 @@ main {
   margin-bottom: 1.5rem;
   align-items: center;
 }
+.box-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-btn {
+  background: transparent;
+  border-color: transparent;
+  color: #0d503c;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+
+}
 .person img {
   width: 75px;
   height: 75px;
@@ -168,7 +181,7 @@ main {
 .person p {
   margin-bottom: 0;
 }
-.container button {
+.btn {
   color: var(--clr-white);
   display: block;
   width: 100%;
