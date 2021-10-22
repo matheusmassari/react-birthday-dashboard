@@ -5,17 +5,12 @@ import data from "./data";
 function App() {
   const [pessoa, setPessoa] = useState(data);
 
-  const personInfo = {
-    info1: pessoa,
-    info2: setPessoa
-  }
 
   function toggleOnOff() {
     pessoa.length > 0 ?
     setPessoa([])
     : setPessoa(data)
   }
-  
 
   return (
     <>
