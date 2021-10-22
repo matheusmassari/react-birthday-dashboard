@@ -1,7 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/30c82ba5-deb5-4028-bfc2-e676860d2c9d/deploy-status)](https://app.netlify.com/sites/massari-birthday-reminder/deploys)
 ![GitHub repo size](https://img.shields.io/github/repo-size/matheusmassari/react-birthday-dashboard)
 ![GitHub language count](https://img.shields.io/github/languages/count/matheusmassari/react-birthday-dashboard)
-https://img.shields.io/github/languages/top/matheusmassari/react-birthday-dashboard
+![GitHub top language](https://img.shields.io/github/languages/top/matheusmassari/react-birthday-dashboard)
 
 ## Simple birthday reminder feature
 
